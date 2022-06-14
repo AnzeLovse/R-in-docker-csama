@@ -1,0 +1,13 @@
+# Install requirements for EdgeR.
+# Here we will pin all package versions to be able to rebuild the image
+# at any time. This might not be always necessary and only the main
+# packages can be specified.
+BiocManager@1.30.18
+locfit@1.5-9.5
+Rcpp@1.0.8.3
+
+# Prefix "bioc" is used to install Bioconductor packages.
+bioc::limma@3.52.1
+
+# Install a specific version of edgeR
+bioc::edgeR@3.38.1
